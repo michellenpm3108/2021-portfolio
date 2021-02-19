@@ -5,37 +5,40 @@
   <title>portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600&family=Prata&display=swap" rel="stylesheet">
 </head>
 
   <body>
     <header>
       <nav>
-        <ul class="nav-list">
+        <ul class="navigation">
           <li class="nav-item"><a href="work.html" class="nav-link">portfolio</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">about me</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
-        </ul>
+      </ul>
       </nav>
+      
 
-      <section>
-        <div class="left">
-          <h1 class="title">hell<span class="dot dot-hero">o</span>!</h1>
-          <p class="subtitle">I’m Michelle,<br>
-            I’m graphic & web designer.<br>
-            I love creating user-friendly web layout,<br>
-            no more clutter, no more disruption.<br>
-            Let's make life simple.</p>
-          <button class="cta-btn"><a href="" class="btn-link">my works</a></button>
-        </div>
-        <div class="right">
-          <img src="img/hero.jpg" alt="orange flower on blue background" class="hero-img">
-          <p class="img-copyright">image of Felipe Prieto</p>
+      <section class="hero-section">
+        <div class="main-grid">
+          <div class="left">
+            <h1 class="title"> I create user-friendly web lay<span class="dot dot-hero">o</span>ut.</h1>
+            <h2>no more clutter, no more disruption.</h2>
+            <p class="subtitle">Hello <br> I’m Michelle,<br>
+              I’m a graphic & web designer.<br>
+              Let's make our (online) life experience happier and simpler.</p>
+            <button class="cta-btn"><a href="" class="btn-link">my works</a></button>
+          </div>
+          <div class="right">
+            <img src="img/hero.jpg" alt="orange flower on blue background" class="hero-img">
+            <p class="img-copyright">image of Felipe Prieto</p>
+          </div>  
         </div>
       </section>
     </header>
 
-    <main>
+    <main class="main-grid">
       <!-- work section -->
       <section class="works">
         <h2 class="sec-title">w<span class="dot">o</span>rk</h2>
@@ -95,7 +98,7 @@
 
     </main>
 
-    <footer>
+    <footer class="main-grid">
       <div>
         <h5>Michelle Nguyen</h5>
         <p>© 2021, All Rights Reserved</p>
