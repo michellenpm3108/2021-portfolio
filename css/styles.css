@@ -51,7 +51,7 @@ footer {
     border-radius: 50%;
 }
 .dot-hero::before {
-    top: .4em;
+    top: .52em;
     width: 5rem;
     height: 5rem;
 }
@@ -78,7 +78,7 @@ nav {
     color: #F0F1DF;
     font-size: 1.3rem;
     font-family: 'EB Garamond', serif;
-    font-weight: 500;;
+    font-weight: 500;
 
 } 
 
@@ -91,7 +91,7 @@ nav {
         justify-content:space-evenly;
     }
     .nav-link {
-        color: #2d2e1fb4;
+        /* color: #2d2e1fb4; */
         font-size: 1.5rem;
     }
 }
@@ -115,7 +115,7 @@ nav {
 }
 .hero-text {
     color: #f0f1dfbf;
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     font-size: 1rem;
 }
@@ -137,7 +137,7 @@ nav {
 @media (min-width: 1000px) {
 
     .hero {
-        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(100px,600px)) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(100px,550px)) minmax(1em, 1fr);
     }
     .left {
         grid-column: 2/span 1;
@@ -147,9 +147,6 @@ nav {
         display: initial;
         background-color:#FAE360;
         grid-column: 3/span1;
-    }
-    .hero-text {
-        width: 100%;
     }
     .hero-image {
         margin-top: 12em;
