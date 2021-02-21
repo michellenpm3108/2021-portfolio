@@ -10,7 +10,9 @@ img {
 /* TYPOGRAPHY */
 
 h1, h2, h3, h4 {
-    font-family: 'Prata', serif;
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Prata', serif; */
+
 }
 
 a { 
@@ -75,6 +77,9 @@ nav {
     text-decoration: none;
     color: #F0F1DF;
     font-size: 1.3rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;;
+
 } 
 
 @media (min-width: 900px) {
