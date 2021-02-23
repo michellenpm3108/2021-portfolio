@@ -24,10 +24,14 @@ a {
 .nav-link {
     text-decoration: none;
     color: #F0F1DF;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
 } 
+.nav-link:focus,
+.nav-link:hover {
+    color: #FAE360;
+}
 .hero-title,
 .hero-subtitle{
     color: #F0F1DF;
@@ -61,6 +65,11 @@ a {
     font-family: 'Prata', serif;
     font-weight: 400;
 }
+.about-me-title, 
+.me-intro {
+    color: #F0F1DF;
+    margin: 0;
+}
 .project-type {
     font-size: 2rem;
     font-weight: 200;
@@ -75,6 +84,18 @@ a {
 }
 .project-info {
     color: #913B2A;
+}
+.project-link {
+    text-decoration: none;
+    color: #F86447;
+    font-weight: 700;
+    letter-spacing: .2em;
+    font-size: .85rem;
+}
+.project-link:hover,
+.project-link:focus {
+    padding-bottom:.2em;
+    border-bottom: 2px solid  #F86447;
 }
 
 /* -------------------- */
@@ -122,33 +143,32 @@ footer {
 /* NAVIGATION */
 /* -------------------- */
 nav {
-    position: fixed;
-    width: 100vw;
-    background-color: #F86447;
     z-index: 10;
+    position: absolute;
+    left:-1em;
 }
 .navigation {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content:space-around;
     margin: 0;
+    /* background-color: bisque; */
 }
 .nav-item {
-    padding: 1em;
+    padding: 4em 0;
+    margin: 0;
+    transform: rotate(-90deg);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     nav {
         position: absolute;
         background-color: transparent;
     }
     .navigation {
-        justify-content:space-evenly;
-    }
-    .nav-link {
-        /* color: #2d2e1fb4; */
-        font-size: 1.5rem;
+        justify-content: space-evenly;
     }
 }
 
@@ -222,10 +242,70 @@ nav {
     object-position: center;
 }
 
-
+.work-btn {
+    margin: 0 0 4em auto;
+}
 .project{
     margin-bottom: 6em;
 }
+
+@media (min-width: 1000px) {
+    .works {
+        display: grid; 
+        grid-template-columns: minmax(1em, 1fr) minmax(600px, 800px) minmax(1em, 1fr);
+    }
+    
+    .project {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-areas: 
+        'left right';
+    }
+    .project-photo {
+        grid-area: left;
+    }
+    .project-caption {
+        grid-area: right;
+        padding-left: 1em;
+    }
+    .photo-right-side {
+        grid-area: right;
+    }
+    .caption-left-side {
+        grid-area: left;
+        text-align: right;
+        padding: 0 1em 0;
+    }
+}
+
+
+/* -------------------- */
+/* ABOUT ME SECTION */
+/* -------------------- */
+
+.about-me {
+    padding: 3em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* For the width display, ignore this */
