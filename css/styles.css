@@ -7,19 +7,79 @@ body {
 img {
     width: 100%;
 }
+
 /* TYPOGRAPHY */
 
-h1, h2, h3, h4 {
+h1, h2 {
     font-family: 'EB Garamond', serif;
-    /* font-family: 'Prata', serif; */
-
+}
+h3, h4{
+    font-family: 'Prata', serif;
 }
 
 a { 
     font-family: 'Inconsolata', monospace;
 }
 
-/* LAYTOUT */
+.nav-link {
+    text-decoration: none;
+    color: #F0F1DF;
+    font-size: 1.3rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+} 
+.hero-title,
+.hero-subtitle{
+    color: #F0F1DF;
+}
+.hero-title {
+    font-size: 10rem;
+    margin: 0;
+    line-height: 1;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    margin: 0 0 1em;
+}
+.hero-text {
+    color: #f0f1dfbf;
+    font-size: 1.1rem;
+    width: 90%;
+    margin-left: auto;
+    font-size: 1rem;
+}
+.btn-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #393939;
+    font-size: 1.1rem;
+}
+.sec-title {
+    font-size: 5rem;
+    margin: .5em 0 .7em;
+    color:  #F86447;
+    font-family: 'Prata', serif;
+    font-weight: 400;
+}
+.project-type {
+    font-size: 2rem;
+    font-weight: 200;
+    background-color: #F86447;
+    color: #F0F1DF;
+ }
+.project-title {
+    font-size: 2rem;
+    color: #CC523A;
+    font-weight: 200;
+    margin-bottom: .5em;
+}
+.project-info {
+    color: #913B2A;
+}
+
+/* -------------------- */
+/* MAIN LAYTOUT */
+/* -------------------- */
 .main-grid {
     display: grid; 
     grid-template-columns: minmax(1em, 1fr) minmax(100px, 500px) minmax(1em, 1fr);
@@ -49,19 +109,23 @@ footer {
     position:absolute;
     background-color:#FAE360;
     border-radius: 50%;
+    width: 2.9rem;
+    height: 2.9rem;
+    top: .45em;
 }
 .dot-hero::before {
     top: .52em;
     width: 5rem;
     height: 5rem;
 }
-
-/* navigation */
+/* -------------------- */
+/* NAVIGATION */
+/* -------------------- */
 nav {
     position: fixed;
     width: 100vw;
     background-color: #F86447;
-
+    z-index: 10;
 }
 .navigation {
     list-style-type: none;
@@ -73,14 +137,6 @@ nav {
 .nav-item {
     padding: 1em;
 }
-.nav-link {
-    text-decoration: none;
-    color: #F0F1DF;
-    font-size: 1.3rem;
-    font-family: 'EB Garamond', serif;
-    font-weight: 500;
-
-} 
 
 @media (min-width: 900px) {
     nav {
@@ -96,41 +152,22 @@ nav {
     }
 }
 
-/*hero section */
+/* -------------------- */
+/* HERO SECTION */
+/* -------------------- */
 .left {
     padding: 10em 0 0 4em;
-    color: #F0F1DF;
-    font-size: 1.1rem;
     text-align: right;
     /* border: 1px solid black; */
 }
-.hero-title {
-    font-size: 10rem;
-    margin: 0;
-    line-height: 1;
-}
-.hero-subtitle {
-    font-size: 2rem;
-    margin: 0 0 1em;
-}
-.hero-text {
-    color: #f0f1dfbf;
-    width: 90%;
-    margin-left: auto;
-    font-size: 1rem;
-}
+
 .cta-btn {
     background-color:#FAE360;
     border: none;
     padding: .5em 4em;
     margin-top: 2em;
 }
-.btn-link {
-    text-decoration: none;
-    font-weight: 700;
-    color: #393939;
-    font-size: 1.1rem;
-}
+
 .right {
     display: none;
 }
@@ -157,12 +194,38 @@ nav {
     }
 }
 
-/* work section */
+/* -------------------- */
+/* WORK SECTION */
+/* -------------------- */
+.project-photo {
+    position: relative;
+}
+.project-type {
+    position: absolute;
+    top: -1.5em;
+    z-index: 2;
+}
+.project-photo:after {
+    content:"";
+    display: block;
+    padding-bottom: 100%;
+}
+.project-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Make the picture taking the size of it's parent */
+    width: 100%; /* This if for the object-fit */
+    height: 100%; /* This if for the object-fit */
+    object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+}
 
 
-
-
-
+.project{
+    margin-bottom: 6em;
+}
 
 
 /* For the width display, ignore this */
