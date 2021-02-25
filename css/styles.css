@@ -327,6 +327,9 @@ nav {
 /* -------------------- */
 /* CONTACT SECTION */
 /* -------------------- */
+.contact {
+    padding: 1em 0 2em;
+}
 .contact-title{
     margin-bottom: 0.2em;
 }
@@ -336,8 +339,12 @@ nav {
 }
 textarea {
     resize: none;
-    border: none;
     outline: none;
+    border: 1px solid #F1E391;
+    margin: 1em 0 2em;
+    border-radius: 5px;
+    width: 80%;
+    padding: 1em;
 }
 label {
     color: #F86447;
@@ -347,9 +354,9 @@ input {
     font-family: 'Inconsolata', monospace;
     outline: none;
     display: block;
-    padding: .5em;
+    padding: 1em;
     margin: 1em 0;
-    width: 60%;
+    width: 80%;
     border: none;
     border-bottom: 1px #F1E391 solid;
 }
@@ -390,7 +397,18 @@ input {
         bottom: 7em;
     }
 }
-
+@media (min-width: 1300px) {
+    .contact-img-one{
+        width: 450px;
+        height: 450px;
+        margin-top: 5em;
+    }
+    .contact-img-two{
+        width: 300px;
+        height: 300px;
+        left : 17em;
+    }
+}
 
 
 
