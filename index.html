@@ -24,18 +24,17 @@
       </nav>
       
 
-      <section class="hero-section">
-        <div class="hero main-grid">
-          <div class="left">
-            <!-- <h1 class="hero-title"> hello! </h1> -->
+      <section class="bright-bg">
+        <div class="hero-section two-columns main-grid">
+          <div class="left-column">
             <h1 class="hero-title"> hell<span class="dot dot-hero">o</span>! </h1>
-            <h2 class="hero-subtitle">I’m Michelle, I create pleasing user-friendly web layout.</h2>
+            <h2 class="hero-subtitle">I’m Michelle, I create pleasing user-friendly web layouts.</h2>
             <p class="hero-text">  No more clutter, no more disruption. <br>
               Let's make our (online) life experience happier and simpler.</p>
             <button class="cta-btn"><a href="" class="btn-link">my works</a></button>
           </div>
 
-          <div class="right">
+          <div class="right-column">
             <img class="hero-image" src="img/hero.jpg" alt="orange flower on blue background" class="hero-img">
           </div>  
         </div>
@@ -89,40 +88,53 @@
             <a href="#" class="project-link">SEE MORE</a>
           </div>
           </div>
-        <button class="cta-btn work-btn"><a href="work.html" class="btn-link">SEE MORE WORKS</a></button>      </section>
+        <button class="cta-btn work-btn"><a href="work.html" class="btn-link">SEE MORE WORKS</a></button>
+      </section>
 
       <!-- about me section -->
-      <section class="about-me">
-        <div class=" about main-grid">
+      <section class="bright-bg">
+        <div class="about-me main-grid">
           <div class=" about-me-grid">
             <h2 class="sec-title about-me-title">ab<span class="dot">o</span>ut me</h2>
-            <div class="me-img" >
-              <!-- <img src="img/about me-mert-kahveci.jpg" alt="my photo"> -->
-            </div>
-            <p class="me-intro">I'm Michelle, a multidisciplinary designer based in Kuala Lumpur, Malaysia. <br>
-              I approach design empathetically and focus on understanding the latent needs and emotions of the people who I am designing for, aiming to create clear, impactful solutions to enrich their lives. <br>
-              I have worked on projects in UI/UX, web design, branding and identity, signage and print design. <br>
-              I enjoy  learning about new tools and approaches to continue enhancing my design process.
-              </p>    
+            <div class="me-img" > </div>
+            <div class="me-intro">
+              <p>I'm Michelle, a multidisciplinary designer based in Kuala Lumpur, Malaysia. </p>
+              <p>I approach design empathetically and focus on understanding the latent needs and emotions of the people who I am designing for, aiming to create clear, impactful solutions to enrich their lives. </p>
+              <p>I have worked on projects in UI/UX, web design, branding and identity, signage and print design. </p>
+              <p>I enjoy  learning about new tools and approaches to continue enhancing my design process.</p>
+            </div>    
           </div>
         </div>
       </section>
 
        <!-- contact section -->
-       <section class="contact main-grid">
-        <h2 class="sec-title">c<span class="dot">o</span>ntact</h2>
-        <img src="img/contact 1.jpg" alt="my photo" class="contact-img">
-        <img src="img/contact 2.jpg" alt="my photo" class="contact-img">
-        <p class="contact-text">Want to discuss a project, collaborate or say hello? <br>
-        Drop me a line, I'd love to hear from you! : ) <br>
-        Email: michelle.npm3108@gmail.com <br>
-        Whatsapp: +6011-5111-5121
-        </p>
+       <section class="contact main-grid ">
+         <div class="two-contact-columns">
+          <div class="left-contact-column">
+            <h2 class="sec-title contact-title">c<span class="dot">o</span>ntact</h2>
+            <p class="contact-text">Want to discuss a project, collaborate or say hello?
+              Drop me a line, I'd love to hear from you! : ) <br>
+            </p>
+            <form>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
+              <label for="email">Email:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            </form>
+            <button class="cta-btn"><a href="work.html" class="btn-link">Submit</a></button>
+          </div>
+  
+          <div class="right-contact-column">
+            <img src="img/contact 1.jpg" alt="my photo" class="contact-img contact-img-one">
+            <img src="img/contact 2.jpg" alt="my photo" class="contact-img contact-img-two">  
+          </div>
+         </div>
       </section>
-
     </main>
 
-    <footer>
+    <footer class="bright-bg">
       <div class="main-grid">
         <div>
           <h5>Michelle Nguyen</h5>
@@ -131,6 +143,7 @@
         <div>
           <h5>Contact</h5>
           <p>michelle.npm3108@gmail.com</p>
+          <p>Whatsapp: +6011-5111-5121</p>
         </div>
         <div>
           <h5>Connect</h5>

@@ -108,19 +108,17 @@ a {
 .main-grid>* {
     grid-column: 2/-2;
 }
-.hero-section,
-.about-me,
-footer {
+.bright-bg{
     background-color: #F86447;
 }
-.hero, 
-/* .about-me, */
+.hero-section, 
 .contact {
     min-height: 100vh;
 }
 .hero-section>* {
     height: 100%;
 }
+
 /* dot */
 .dot{
     position: relative;
@@ -175,10 +173,9 @@ nav {
 /* -------------------- */
 /* HERO SECTION */
 /* -------------------- */
-.left {
+.left-column {
     padding: 10em 0 0 4em;
     text-align: right;
-    /* border: 1px solid black; */
 }
 
 .cta-btn {
@@ -188,19 +185,20 @@ nav {
     margin-top: 2em;
 }
 
-.right {
+.right-column {
     display: none;
 }
+
 @media (min-width: 1000px) {
 
-    .hero {
-        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(100px,550px)) minmax(1em, 1fr);
+    .two-columns {
+        grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(100px,500px)) minmax(1em, 1fr);
     }
-    .left {
+    .left-column {
         grid-column: 2/span 1;
         padding-right: 25px;
     }
-    .right{
+    .right-column{
         display: initial;
         background-color:#FAE360;
         grid-column: 3/span1;
@@ -213,6 +211,7 @@ nav {
         object-fit: cover;
     }
 }
+
 
 /* -------------------- */
 /* WORK SECTION */
@@ -314,8 +313,8 @@ nav {
 }
 
 @media (min-width: 1000px) {
-    .about{
-        grid-template-columns: minmax(1em, 1fr) minmax(800px, 960px) minmax(1em, 1fr);
+    .about-me{
+        grid-template-columns: minmax(1em, 1fr) minmax(600px, 960px) minmax(1em, 1fr);
     }
     .about-me-grid {
         grid-template-columns: repeat(auto-fill, 480px) ;
@@ -325,16 +324,72 @@ nav {
     }
 }
 
+/* -------------------- */
+/* CONTACT SECTION */
+/* -------------------- */
+.contact-title{
+    margin-bottom: 0.2em;
+}
+.contact-text {
+    margin-bottom: 4em;
+    padding-right: 2em;
+}
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+}
+label {
+    color: #F86447;
+
+}
+input {
+    font-family: 'Inconsolata', monospace;
+    outline: none;
+    display: block;
+    padding: .5em;
+    margin: 1em 0;
+    width: 60%;
+    border: none;
+    border-bottom: 1px #F1E391 solid;
+}
+.right-contact-column {
+    display: none;
+}
 
 
 
-
-
-
-
-
-
-
+@media (min-width: 1000px) {
+    .contact{
+        display: grid; 
+        grid-template-columns: minmax(1em, 1fr) minmax(600px, 960px) minmax(1em, 1fr);
+    }
+    .two-contact-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px,500px));
+    }
+    .right-contact-column {
+        display: initial;
+    }
+    .contact-text {
+        padding-right: 3em;
+    }
+    .contact-img {
+        position: relative;
+        object-fit: cover;
+    }
+    .contact-img-one{
+        width: 350px;
+        height: 350px;
+        margin-top: 8em;
+    }
+    .contact-img-two{
+        width: 200px;
+        height: 200px;
+        left : 13em;
+        bottom: 7em;
+    }
+}
 
 
 
