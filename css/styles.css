@@ -116,7 +116,7 @@ footer {
 .hero-section, 
 .about-me,
 .contact {
-    height: 100vh;
+    min-height: 100vh;
 }
 .hero-section>* {
     height: 100%;
@@ -268,10 +268,10 @@ nav {
         grid-area: right;
         padding-left: 1em;
     }
-    .photo-right-side {
+    .project-photo-reversed{
         grid-area: right;
     }
-    .caption-left-side {
+    .project-caption-reversed {
         grid-area: left;
         text-align: right;
         padding: 0 1em 0;
