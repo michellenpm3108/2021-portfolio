@@ -174,8 +174,9 @@ nav {
 /* HERO SECTION */
 /* -------------------- */
 .left-column {
-    padding: 10em 0 0 4em;
+    padding: 10em 0 0 2em;
     text-align: right;
+    /* border: 1px solid green; */
 }
 
 .cta-btn {
@@ -341,21 +342,19 @@ textarea {
     resize: none;
     outline: none;
     border: 1px solid #F1E391;
-    margin: 1em 0 2em;
+    margin: 2em 0 2em;
     border-radius: 5px;
     width: 80%;
     padding: 1em;
 }
 label {
     color: #F86447;
-
 }
 input {
     font-family: 'Inconsolata', monospace;
     outline: none;
     display: block;
-    padding: 1em;
-    margin: 1em 0;
+    padding: .5em 1em;
     width: 80%;
     border: none;
     border-bottom: 1px #F1E391 solid;
@@ -363,8 +362,6 @@ input {
 .right-contact-column {
     display: none;
 }
-
-
 
 @media (min-width: 1000px) {
     .contact{
@@ -409,6 +406,101 @@ input {
         left : 17em;
     }
 }
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+footer {
+    color: #E5E5E5;
+    text-align: center;
+    padding: 2em 0;
+}
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+}
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: .25em;
+}
+.connect-list ,
+.contact-add {
+    list-style-type: none;
+    padding: 0;
+}
+.connect-link {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+.connect-link:hover,
+.connect-link:focus {
+    color:#FAE360;
+    font-weight: bold;
+}
+.copyright {
+    order: 1;
+}
+.quote {
+    order: -1;
+    position: relative;
+    margin: 8em auto 0;
+    width: 30vw;
+}
+.quote::after {
+    content:"";
+    position:absolute;
+    background-color:#FAE360;
+    opacity: .5;
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    bottom: 5em;
+    left: 5em;
+    z-index: 0;
+}
+.quote-text {
+    font-weight: bold;
+    font-size: 1.25rem;
+    /* width: 50%; */
+    margin: 0 auto;
+}
+
+@media (min-width:1000px) {
+    .footer-grid {
+        display: grid; 
+        grid-template-columns: minmax(1em, 1fr) minmax(600px, 960px) minmax(1em, 1fr);
+    }
+    .footer-flex {
+        flex-direction: row;
+        border: 1px solid black;
+        justify-content: space-between;
+    }
+    .footer-flex>* {
+        margin: 0 2em;
+    }
+    .quote{
+        padding-top: 8em;
+    }
+    .quote {
+        order: 4;
+    }
+    .copyright{
+        order: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
