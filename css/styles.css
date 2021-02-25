@@ -113,8 +113,8 @@ a {
 footer {
     background-color: #F86447;
 }
-.hero-section, 
-.about-me,
+.hero, 
+/* .about-me, */
 .contact {
     min-height: 100vh;
 }
@@ -165,7 +165,7 @@ nav {
 @media (min-width: 1000px) {
     nav {
         position: absolute;
-        background-color: transparent;
+        background-color:transparent;
     }
     .navigation {
         justify-content: space-evenly;
@@ -284,11 +284,46 @@ nav {
 /* -------------------- */
 
 .about-me {
-    padding: 3em 0;
+    padding: 80px 0;
+}
+.about-me-grid {
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-areas:
+    'title title'
+    'photo text';
+    /* border: 1px solid; */
+    gap: 1em;
+}
+.about-me-title {
+    margin: 0;
+    grid-area: title;
+    padding-bottom: .25em;
+}
+.me-img {
+    grid-area: photo;
+    background-image: url(/img/myPhoto.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
 }
 
+.me-intro {
+    grid-area: text;
+    line-height: 1.6;
+}
 
-
+@media (min-width: 1000px) {
+    .about{
+        grid-template-columns: minmax(1em, 1fr) minmax(800px, 960px) minmax(1em, 1fr);
+    }
+    .about-me-grid {
+        grid-template-columns: repeat(auto-fill, 480px) ;
+        grid-template-areas:
+        'photo title'
+        'photo text';
+    }
+}
 
 
 
