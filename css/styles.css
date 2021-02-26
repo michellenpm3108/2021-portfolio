@@ -112,6 +112,12 @@ a {
         grid-template-columns: minmax(1em, 1fr) minmax(600px, 960px) minmax(1em, 1fr);
     }
 }
+
+@media (min-width: 1200px) {
+    .grid-big-screen{
+        grid-template-columns: minmax(1em, 1fr) minmax(800px, 1000px) minmax(1em, 1fr);
+    }
+}
 .main-grid>* {
     grid-column: 2/-2;
 }
