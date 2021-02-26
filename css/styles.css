@@ -423,14 +423,14 @@ input {
 }
 @media (min-width: 1300px) {
     .contact-img-one{
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
         margin-top: 5em;
     }
     .contact-img-two{
         width: 300px;
         height: 300px;
-        left : 17em;
+        left : 10em;
     }
 }
 
@@ -446,6 +446,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 footer h5 {
     font-size: 1.25rem;
     margin-bottom: .25em;
@@ -467,6 +468,10 @@ footer h5 {
 .copyright {
     order: 1;
 }
+.copyright p{
+    font-size: .75rem;
+    margin-top: 1.5em;
+}
 .quote {
     order: -1;
     margin: 8em auto 0;
@@ -486,10 +491,10 @@ footer h5 {
     background-color:#FAE360;
     opacity: .8;
     border-radius: 50%;
-    width: 13em;
-    height: 13em;
-    bottom: -3.5em;
-    left: 1em;
+    width: 10em;
+    height: 10em;
+    bottom: -1em;
+    left: 6em;
     z-index: -1;
 }
 .quote-author{
@@ -504,11 +509,15 @@ footer h5 {
         align-items: baseline;
     }
     .footer-flex>* {
-        margin: 0 2em;
+        margin: 0 2em 0 0;
+        text-align: left;
     }
-    
+    .social-contact {
+        margin-right: 8em;
+    }
     .quote {
         order: 4;
+        margin-right: 0;
     }
     .quote-text::before {
         width: 10em;
@@ -518,6 +527,7 @@ footer h5 {
     }
     .copyright{
         order: 0;
+        width: 15em;
     }
 }
 
