@@ -57,8 +57,13 @@ a {
 .hero-text {
     color: #f0f1dfbf;
     font-size: .8rem;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
+}
+@media (min-width: 600px) {
+    .hero-text {
+        width: 60%;
+    }
 }
 .btn-link {
     text-decoration: none;
@@ -151,8 +156,8 @@ main section {
     height: .53em;
 }
 .dot-hero {
-    width: .5em;
-    height: .5em;
+    width: .45em;
+    height: .45em;
 }
 
 /* -------------------- */
