@@ -12,12 +12,12 @@
 </head>
 
   <body>
-    <span id="width" class="width-container"></span>
+    <!-- <span id="width" class="width-container"></span> -->
 
     <header>
-      <nav>
+      <nav class="nav-home">
         <ul class="navigation">
-          <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link current-page">home</a></li>
           <li class="nav-item"><a href="work.html" class="nav-link">portfolio</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">about me</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
@@ -28,7 +28,8 @@
       <section class="bright-bg">
         <div class="hero-section two-columns main-grid">
           <div class="left-column">
-            <h1 class="hero-title"> hell<span class="dot dot-hero">o</span>! </h1>
+            <h1 class="hero-title"> hell<div class="dot dot-hero"></div>! </h1>
+            <!-- <h1 class="hero-title"> hell<span class="dot dot-hero">o</span>! </h1> -->
             <h2 class="hero-subtitle">I’m Michelle, I create beautiful <br> & user-friendly web layouts.</h2>
             <p class="hero-text">  No more clutter, no more disruption. <br>
               Let's make our (online) life experience happier and simpler.</p>
@@ -45,7 +46,8 @@
     <main>
       <!-- work section -->
       <section class="main-grid grid-big-screen">
-        <h2 class="sec-title">w<span class="dot">o</span>rks</h2>
+        <h2 class="sec-title">w<div class="dot"></div>rks</h2>
+        <!-- <h2 class="sec-title">w<span class="dot">o</span>rks</h2> -->
         
         <div class="project">
           <div class="project-photo">
@@ -96,7 +98,8 @@
       <section class="bright-bg">
         <div class="main-grid grid-big-screen">
           <div class="about-me-grid">
-            <h2 class="sec-title about-me-title">ab<span class="dot">o</span>ut me</h2>
+            <h2 class="sec-title about-me-title">ab<div class="dot"></div>ut me</h2>
+            <!-- <h2 class="sec-title about-me-title">ab<span class="dot">o</span>ut me</h2> -->
             <div class="me-img" > </div>
             <div class="me-intro">
               <p>I'm Michelle, a multidisciplinary designer based in Kuala Lumpur, Malaysia. </p>
@@ -112,7 +115,8 @@
        <section class="contact main-grid grid-big-screen">
          <div class="two-contact-columns">
           <div class="left-contact-column">
-            <h2 class="sec-title contact-title">c<span class="dot">o</span>ntact</h2>
+            <h2 class="sec-title contact-title">c<div class="dot"></div>ntact</h2>
+            <!-- <h2 class="sec-title contact-title">c<span class="dot">o</span>ntact</h2> -->
             <p class="contact-text">Want to discuss a project, collaborate or say hello?
               Drop me a line, I'd love to hear from you! : ) <br>
             </p>
@@ -136,34 +140,33 @@
     </main>
 
     <footer class="bright-bg main-grid grid-big-screen">
-        <div class="footer-flex">
-          <div class="copyright">
-            <h5>Michelle Nguyen</h5>
-            <p>© 2021, All Rights Reserved</p>
-          </div>
-  
-          <div >
-            <h5>Contact</h5>
-            <ul class="contact-add">
-              <li>michelle.npm3108@gmail.com</li>
-              <li>Tel: +6011-5111-5121</li>
-            </ul>
-          </div>
-  
-          <div class="social-contact">
-            <h5>Connect</h5>
-            <ul class="connect-list">
-              <li class="connect-item"><a class="connect-link" href="https://www.behance.net/michellenguyen3108" target="_blank" >Behance</a></li>
-              <li class="connect-item"><a class="connect-link" href="https://www.linkedin.com/in/michellenguyen-npm3108/" target="_blank" >Linkedin</a></li>
-              <li class="connect-item"><a class="connect-link" href="https://www.instagram.com/michelle.nguyen3108/" target="_blank" >Instagram</a></li>
-            </ul>
-          </div>
-  
-          <div class="quote">
-            <p class="quote-text">“Just make a mark and see where it takes you” </p>
-            <p class="quote-author">― Peter H. Reynolds, The Dot.</p>
-          </div>
+      <div class="footer-flex">
+        <div class="copyright">
+          <h5>Michelle Nguyen</h5>
+          <p>© 2021, All Rights Reserved</p>
         </div>
+
+        <div >
+          <h5>Contact</h5>
+          <ul class="contact-add">
+            <li>michelle.npm3108@gmail.com</li>
+            <li>Tel: +6011-5111-5121</li>
+          </ul>
+          <h5>Connect</h5>
+          <ul class="connect-list">
+            <li class="connect-item"><a class="connect-link" href="https://www.behance.net/michellenguyen3108" target="_blank" >Behance</a></li>
+            <li class="connect-item"><a class="connect-link" href="https://www.linkedin.com/in/michellenguyen-npm3108/" target="_blank" >Linkedin</a></li>
+            <li class="connect-item"><a class="connect-link" href="https://www.instagram.com/michelle.nguyen3108/" target="_blank" >Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="quote">
+          <div class="quote-dot"></div>
+          <p class="quote-text">“Just make a mark and see where it takes you” </p>
+          <p class="quote-author">― Peter H. Reynolds, The Dot.</p>
+        </div>
+      </div>
+  </footer>>
     </footer>
     <script src="index.js"></script>
   </body>
