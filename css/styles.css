@@ -23,17 +23,23 @@ a {
 
 .nav-link {
     text-decoration: none;
-    color: #F0F1DF;
-    font-size: 1.8rem;
+    color: #d7d8c8;
+    font-size: 1.2rem;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
 } 
 .nav-link:focus,
 .nav-link:hover {
-    color: #FAE360;
+    color: #242320;
+    border-bottom: 1px solid;
+}
+.focus-btn {
+    background-color:#fae3607f; 
+    color: #242320;
 }
 .current-page {
     color: #FAE360;
+
 }
 .hero-title,
 .hero-subtitle{
@@ -159,7 +165,10 @@ nav {
     top: 17.5em;
     transform: rotate(-90deg);
     width: 100vh;
-    background-color: #f86447;
+    /* background-color: #f86447; */
+}
+.nav-home {
+    position: fixed;
 }
 .navigation {
     list-style-type: none;
@@ -174,10 +183,10 @@ nav {
     padding: 0;
     margin: .2em .75em;
 }
-.nav-home {
-    position: fixed;
-
+.nav-link {
+    padding: .2em 1em;
 }
+
 
 /* -------------------- */
 /* HERO SECTION */
