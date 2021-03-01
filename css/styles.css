@@ -165,11 +165,9 @@ main section {
 /* -------------------- */
 nav {
     z-index: 10;
-    position: absolute;
+    /* position: absolute;
     left:-18em;
-    top: 17.5em;
-    transform: rotate(-90deg);
-    width: 100vh;
+    top: 17.5em; */
     /* background-color: #f86447; */
 }
 .nav-home {
@@ -177,19 +175,24 @@ nav {
 }
 .navigation {
     list-style-type: none;
-    padding: 0em;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content:space-around;
+    padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    /* background-color: blueviolet; */
 }
 .nav-item {
-    text-align: center;
     padding: 0;
-    margin: .2em .75em;
 }
 .nav-link {
-    padding: .2em 1em;
+    text-align: center;
+    padding: .2em 0;
+    margin: 2em 0;
+    display: block;
+    transform: rotate(-90deg);
+  /* background-color: cadetblue; */
+
 }
 
 
