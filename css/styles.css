@@ -386,7 +386,11 @@ nav {
 .contact-title{
     margin-bottom: 0.2em;
 }
-
+.left-contact-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 form {
     margin-top: 3em;
 }
