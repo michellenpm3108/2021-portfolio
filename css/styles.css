@@ -166,7 +166,7 @@ main section {
 nav {
     z-index: 10;
     position: absolute;
-    left:-18em;
+    left:-17em;
     top: 17.5em;
     transform: rotate(-90deg);
     width: 100vh;
