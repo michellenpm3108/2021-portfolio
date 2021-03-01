@@ -382,7 +382,6 @@ nav {
 /* -------------------- */
 /* CONTACT SECTION */
 /* -------------------- */
-
 .contact-title{
     margin-bottom: 0.2em;
 }
@@ -437,7 +436,7 @@ input {
     .contact-img-one{
         width: 350px;
         height: 350px;
-        margin-top: 8em;
+        margin-top: 1.5em;
     }
     .contact-img-two{
         width: 200px;
@@ -454,7 +453,7 @@ input {
     .contact-img-one{
         width: 400px;
         height: 400px;
-        margin-top: 5em;
+        margin-top:5em;
     }
     .contact-img-two{
         width: 300px;
