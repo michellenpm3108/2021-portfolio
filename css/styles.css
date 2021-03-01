@@ -140,10 +140,10 @@ main section {
 .bright-bg{
     background-color: #F86447;
 }
-.hero-section, 
+/* .hero-section, 
 .contact {
     height: 100vh;
-}
+} */
 .hero-section>* {
     height: 100%;
 }
@@ -165,10 +165,6 @@ main section {
 /* -------------------- */
 nav {
     z-index: 10;
-    /* position: absolute;
-    left:-18em;
-    top: 17.5em; */
-    /* background-color: #f86447; */
 }
 .nav-home {
     position: fixed;
@@ -180,7 +176,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    /* background-color: blueviolet; */
 }
 .nav-item {
     padding: 0;
@@ -191,8 +186,6 @@ nav {
     margin: 2em 0;
     display: block;
     transform: rotate(-90deg);
-  /* background-color: cadetblue; */
-
 }
 
 
@@ -200,7 +193,7 @@ nav {
 /* HERO SECTION */
 /* -------------------- */
 .left-column {
-    padding: 7em 0 0 .5em;
+    padding: 7em 0;
     text-align: right;
 }
 
@@ -260,12 +253,13 @@ nav {
         display: initial;
         background-color:#FAE360;
         grid-column: 3/span1;
+        height: 100%;
     }
     .hero-image {
         margin-top: 8.7em;
         margin-left: 27px;
-        width: 56.3vh;
-        height: 56.3vh;
+        width: 21.5em;
+        height: 21.5em;
         object-fit: cover;
     }
 }
@@ -319,7 +313,7 @@ nav {
     }
     .project-caption {
         grid-area: right;
-        padding-left: 1em;
+        padding-left: 27px;
     }
     .project-photo-reversed{
         grid-area: right;
@@ -327,7 +321,7 @@ nav {
     .project-caption-reversed {
         grid-area: left;
         text-align: right;
-        padding: 0 1em 0;
+        padding: 0 27px 0;
     }
 }
 
@@ -343,33 +337,16 @@ nav {
     'title title'
     'photo text';
     /* border: 1px solid; */
-    gap: 1em;
 }
 .about-me-title {
     margin: 0;
     grid-area: title;
     padding-bottom: .25em;
 }
-.me-img {
-    grid-area: photo;
-    background-image: url(../img/myPhoto.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-}
-
 .me-intro {
     grid-area: text;
     line-height: 1.6;
-}
-
-@media (min-width: 1000px) {
-    .about-me-grid {
-        grid-template-columns: repeat(auto-fill, 480px) ;
-        grid-template-areas:
-        'photo title'
-        'photo text';
-    }
+    padding-left: 27px;
 }
 .about-me-page-title {
     grid-area: title;
@@ -378,6 +355,29 @@ nav {
 .me-page-intro {
     grid-area: text;
 }
+
+.me-img {
+    grid-area: photo;
+    background-image: url(../img/myPhoto.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 32em;
+}
+
+
+
+@media (min-width: 1000px) {
+    .about-me-grid {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-areas:
+        'photo title'
+        'photo text';
+    }
+    .about-me-title{
+        padding-left: 27px;
+    }
+}
+
 /* -------------------- */
 /* CONTACT SECTION */
 /* -------------------- */
