@@ -142,7 +142,7 @@ main section {
 }
 .hero-section, 
 .contact {
-    min-height: 100vh;
+    height: 100vh;
 }
 .hero-section>* {
     height: 100%;
@@ -166,7 +166,7 @@ main section {
 nav {
     z-index: 10;
     position: absolute;
-    left:-17em;
+    left:-18em;
     top: 17.5em;
     transform: rotate(-90deg);
     width: 100vh;
@@ -459,7 +459,7 @@ input {
 /* FOOTER */
 /* -------------------- */
 footer {
-    margin-top: 100px;
+    margin-top: 40px;
     color: #e5e5e5dd;
     text-align: center;
     padding: 2em 0;
