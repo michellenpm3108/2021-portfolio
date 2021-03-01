@@ -356,6 +356,8 @@ nav {
 }
 .me-page-intro {
     grid-area: text;
+    padding-left: 27px;
+
 }
 
 .me-img {
@@ -375,7 +377,8 @@ nav {
         'photo title'
         'photo text';
     }
-    .about-me-title{
+    .about-me-title, 
+    .about-me-page-title {
         padding-left: 27px;
     }
 }
