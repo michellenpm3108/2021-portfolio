@@ -46,23 +46,33 @@ a {
     color: #F0F1DF;
 }
 .hero-title {
-    font-size: 10rem;
+    font-size: 7rem;
     margin: 0;
     line-height: 1;
 }
 .hero-subtitle {
-    font-size: 1.5rem;
-    margin: 0 0 1em;
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-top: 0;
+    width: 80%;
 }
 .hero-text {
     color: #f0f1dfbf;
-    font-size: .8rem;
+    font-size: .75rem;
     width: 80%;
     margin-left: auto;
 }
 @media (min-width: 600px) {
+    .hero-title {
+        font-size: 9rem;
+    }
+    .hero-subtitle {
+        font-size: 1.5rem;
+        width: 70%;
+    }
     .hero-text {
         width: 60%;
+        font-size: .9rem;
     }
 }
 .btn-link {
