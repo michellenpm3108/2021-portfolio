@@ -24,7 +24,7 @@ a {
 .nav-link {
     text-decoration: none;
     color: #d7d8c8;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
 } 
@@ -73,6 +73,9 @@ a {
     .hero-text {
         width: 60%;
         font-size: .9rem;
+    }
+    .nav-link {
+        font-size: 1.2rem;
     }
 }
 .btn-link {
