@@ -106,6 +106,10 @@ a {
     padding-bottom:.2em;
     border-bottom: 2px solid  #F86447;
 }
+.me-intro,
+.contact-text{
+    font-size: .75rem;
+}
 @media (min-width: 250px) {
     .hero-title {
         display:block;
@@ -159,6 +163,8 @@ a {
         font-size: 1.5rem;
         width: 70%;
     }
+  
+}
 }
 @media (min-width: 600px) {
     .hero-title {
@@ -192,6 +198,10 @@ a {
     }
     .project-link {
         font-size: .75rem;
+    }
+    .me-intro,
+    .contact-text{
+    font-size: .9rem;
     }
 }
 /* -------------------- */
